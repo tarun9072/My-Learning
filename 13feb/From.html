@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>Form in Html</h3>
+    <form action="backend.php">
+        Name:<input type="text" name="myName" ><br><br>
+        Email:<input type="email" name="myemail"><br><br>
+        Phone Number: <input type="number" name="mymobilenumber"><br><br>
+        Date Of Birth: <input type="date" name="myDOB"><br><br>
+        <label for="ability">Are you Eligible for this</label>
+        <input type="checkbox" name="myEligibility" id="ability"><br><br>
+        Gender: Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender">
+        Other: <input type="radio" name="mygender"><br><br>
+        Write about Yourself: <br> <textarea name="Intro"  cols="80" rows="10"></textarea><br><br>
+        <label for="role">Select your Role</label>
+        <select name="myrole" id="role">
+            <option value="fdev" >Front End Developer</option>
+            <option value="bdev" >Back End Developer</option>
+            <option value="cosspt">Customer Support</option>
+            <option value="def" selected>Select your role</option>
+        </select><br><br>
+        <input type="submit" value="Submit now">
+        <input type="reset" value="Reset the Values">
+    </form><br><br></br><br><br><br>
+    <div>
+        <a href="Basics.html" target="_blank"> Click to jump to Basics</a><br>
+        <a href="listandtable.html" target="_blank">Click to jump on List and Table topics</a>
+
+    </div>
+</body>
+</html>

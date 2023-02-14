@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        .navbar {
+            background-color: #cb5353;
+            border-radius: 20px;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 10px 20px;
+            padding: 5px 1px;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .search {
+            float: right;
+            padding: 13px 89px;
+        }
+        .btn{
+            border-radius: 12px;
+        }
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 24px;
+            width: 129px;
+        }
+        .navbar li a {
+            text-decoration: none;
+            color:  #060606;
+        }
+        .navbar li a:hover {
+            color: rgb(201, 187, 187)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#"> Home</a></li>
+                <li> <a href="#"> About</a></li>
+                <li> <a href="#"> Services</a></li>
+                <li> <a href="#"> Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Write Here to Search">
+                    <button class="btn">Search</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
