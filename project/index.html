@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOKA radio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('mic.avif');
+            /* color: white; */
+            font-family: 'Julee', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+
+
+        .mid {
+            /* border: 2px solid green; */
+            position: absolute;
+            top: 15px;
+            /* display: block; */
+            width: 33%;
+            /* margin: auto; */
+            left: 500px;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            position: absolute;
+            left: 1358px;
+            top: 35px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #1d0074;
+            padding: 15px;
+        }
+
+        .navbar li a:hover {
+            color: gray;
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 125px;
+        }
+
+        .left img:hover {
+            width: 133px;
+        }
+
+        .btn {
+            color: #1d0074;
+            background-color: #714a6b;
+            font-family: 'Julee', cursive;
+            width: 80px;
+            height: 25px;
+        }
+
+        .btn:hover {
+            background-color: #5b375b;
+            cursor: pointer;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 32%;
+            height: 35px;
+            margin: 22px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.webp" alt="Error Occur">
+            <!-- <div>OOKA Radio</div> -->
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#"> Home</a></li>
+                <li> <a href="#"> About</a></li>
+                <li> <a href="#"> Our Branches</a></li>
+                <li> <a href="#"> Services</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"> Contact us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Welcome to the OOka Radio</h1>
+        <form action="nothing.js">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <!-- <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div> -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Store Type">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <embed src="bg-music.mp3" loop="true" autostart="true" width="2"
+    height="0">
+</body>
+
+</html>
