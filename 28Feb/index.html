@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Table</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+
+        <div class="mainTable">
+            <h1>Data</h1>
+            <table id="table" border="1"> 
+                <tr>
+                    <th>Sr. no.</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Country</th>
+                    <th>Mobile number</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="updateBtn">
+            <button  onclick="">Update data</button>
+        </div>
+
+        <div class="editTable">
+            <div class="left">Name: </div><div class="right"><input type="text" name="name" id="name"></div><br><br>
+            <div class="left">Address: </div><div class="right"><input type="text" name="address" id="address"></div><br><br>
+            <div class="left">Country: </div><div class="right"><input type="text" name="country" id="country"></div><br><br>
+            <div class="left">Mobile number: </div><div class="right"><input type="number" name="mNumber" id="mNumber"></div><br><br>
+            <button onclick="" class="editRowBtn">Update</button><br><br>
+        </div>        
+
+    </body>
+    <script src="JS/jquery-3.6.3.min.js"></script>
+    <script src="JS/script.js"></script>
+</html>
