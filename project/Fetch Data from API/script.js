@@ -5,6 +5,7 @@ fetch("https://fakestoreapi.com/products")
 .then(data => data.json())
 .then((objectdata) => {
     console.log(objectdata);
+
     let tabledata = "";
     objectdata.map((values) => {
         tabledata += `
@@ -13,7 +14,7 @@ fetch("https://fakestoreapi.com/products")
             <td>${values.description}</td>
             <td>${values.price}</td>
             <td><img src="${values.image}"></img></td>
-            <td>${values.category}</td>
+            <td>${values.title}</td>
             </tr>
         `;
     });
