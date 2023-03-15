@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1 class="my-3px">Enter Text below to Analyze</h1>
+    <textarea [(ngModel)]="text" name="text-form" id="maintext" cols="30" rows="10"></textarea>
+    <div class="container my-2">
+        <button class="btn btn-primary " (click)="handleUpperCase()">Convert to Upper Case</button>
+        <button class="btn btn-primary mx-2" (click)="handleLowerCase()">Convert to Lower Case</button>
+        <button class="btn btn-primary mx-2" (click)="clearText()">Clear Text</button>
+        <button class="btn btn-primary mx-2" (click)="copyText()">Copy Text</button>
+        <button class="btn btn-primary mx-2" (click)="handleExtraSpaces()">Remove Extra Space</button>
+    </div>
+</div>
+<div class="container my-2">
+    <h2>
+        Your Text Summary
+    </h2>
+    <p>You have {{ wordCount }} Words and {{ characterCount }} Character in your text.</p>
+    <h2>Text Preview</h2>
+    <p>{{text || 'Write Something to Preview'}}</p>
+</div>
