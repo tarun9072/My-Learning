@@ -1,0 +1,24 @@
+<div class="input-container">
+  <label for="key-input">Please enter your key:</label>
+  <input id="key-input" type="text" maxlength="14" [(ngModel)]="key">
+
+  <div class="button-container">
+    <button class="submit-button" (click)="submit()" type="submit" [disabled]="key.length !== 14">Submit</button>
+  </div>
+
+<table *ngIf="showTable">
+  <thead>
+    <tr>
+      <th *ngFor="let header of tableHeader">{{ header }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rows">
+      <td *ngFor="let cell of row"> {{ cell }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="button-container">
+  <button class="reset-button" *ngIf="showTable" (click)="confirmReset()">Reset</button>
+</div>
